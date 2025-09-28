@@ -1,6 +1,6 @@
 **Pixel counting & bilateral-filter tuning for speck detection**
 
-This repo contains three Jupyter notebooks:
+*This repo contains three Jupyter notebooks:*
 
 a) an interactive freehand polygon pixel counter to check areas directly on an image,
 
@@ -18,9 +18,9 @@ Dark_Speck_Area_Report.ipynb — run a single sweep (with the chosen filter & pa
 
 **1) Freehand polygon pixel counter**
 
-Notebook: Count_pixels_inside_a_freehand_polygon.ipynb
+*Notebook: Count_pixels_inside_a_freehand_polygon.ipynb*
 
-Goal: Draw a freehand region on an image and print the number of full-resolution pixels inside the drawn polygon.
+*Goal: Draw a freehand region on an image and print the number of full-resolution pixels inside the drawn polygon.*
 
 What it does:
 
@@ -34,9 +34,9 @@ d. Displays a blended overlay of the selected region.
    
 **2) Bilateral filter parameter tuning**
 
-Notebook: Best_parameter_with_Bilateral Filter Tuning.ipynb
+*Notebook: Best_parameter_with_Bilateral Filter Tuning.ipynb*
 
-Goal: Find (d, sigmaColor, sigmaSpace) for OpenCV’s bilateral filter that best match my ground-truth speck areas (in mm²) over many region of interests.
+*Goal: Find (d, sigmaColor, sigmaSpace) for OpenCV’s bilateral filter that best match my ground-truth speck areas (in mm²) over many region of interests.*
 
 Assumptions & inputs:
 
@@ -84,9 +84,9 @@ For each combo, it computes per-region of interest relative error - abs(hand - a
 
 **3) Single-pass dark speck area report**
 
-Notebook: Dark_Speck_Area_Report.ipynb
+*Notebook: Dark_Speck_Area_Report.ipynb*
 
-Goal: Generate a one-shot report (images + CSV) using one chosen denoising/filter method and fixed parameters. This is handy after picking settings with the tuner, or if you want to compare different prefilters.
+*Goal: Generate a one-shot report (images + CSV) using one chosen denoising/filter method and fixed parameters. This is handy after picking settings with the tuner, or if you want to compare different prefilters.*
 
 Filter options-The notebook includes commented blocks for several prefilters:
 
